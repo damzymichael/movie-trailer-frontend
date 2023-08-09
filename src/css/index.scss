@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-align: center; */
+  background: #090a0e;
+  color: #fff;
+  position: relative;
+}
+.max-center {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 25px;
+}
+button.search {
+  border: none;
+  background: #6358ee;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+.user-icon {
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  position: relative;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 15px;
+  background: #0f1014;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.movie-poster {
+  width: 100%;
+}
+.movie {
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.movie-placeholder {
+  min-height: 359px;
+  background: white;
+  color: #0f1014;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  min-height: 500px;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.hero-content {
+  max-width: 70%;
+  padding-bottom: 60px;
+}
+.hero-title {
+  font-size: 72px;
+  margin: 0;
+}
+.close-button {
+  position: absolute;
+  top: -20px;
+  right: 90px;
+  font-weight: 100;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 5rem;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+/* input styles */
+.form {
+  display: flex;
+  gap: 5px;
+}
+input {
+  height: 23px;
+  width: 200px;
+  border-radius: 25px;
+  outline: none;
+  padding-inline: 5px;
+}
+
+button.login {
+  background: none;
+  color: white;
+  border: none;
+  &:hover {
+  color: #6358ee;
+}
+}
+
+/* input styles */
+
+.button {
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+.youtube-container {
+  position: absolute;
+  inset: 0;
+}
+button.addtolist {
+  padding: 3px 10px;
+  margin-bottom: 20px;
+}
+
+div.login {
+  border-radius: 20px;
+  background: aliceblue;
+  width: 350px;
+  height: 500px;
+  color: #090a0e;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span {
+    font-size: 4rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-align: right;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input {
+    display: block;
+    margin: 20px auto;
+  }
+  button {
+    background: #6358ee;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+  }
+  span.signup {
+    color: blue;
+    font-size: 1em;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .error {
+    color: red;
+    animation: shake 0.5;
+  }
+}
+.nav-container {
+  width: 120px;
+  border-radius: 5px;
+  position: absolute;
+  background: aliceblue;
+  color: #212121;
+  top: 60px;
+  .arrow-up {
+    position: absolute;
+    top: -10px;
+    right: 50px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid aliceblue;
+  }
+  ul {
+    display: flex;
+    padding-inline: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    li {
+      width: 85%;
+      text-align: center;
+      &:hover {
+        color: #6358ee;
+      }
+      &:first-child {
+        padding-bottom: 10px;
+        border-bottom: solid black 1px;
+      }
+      &:last-child {
+        padding-top: 10px;
+      }
+    }
+  }
+}
